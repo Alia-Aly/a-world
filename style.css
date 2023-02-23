@@ -1,0 +1,584 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.head{
+    background-image: url("images/banner-bg.png");
+    background-size: cover;
+    height: auto;
+    text-align: center;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    padding-bottom: 338px;
+}
+.head h2{
+    font-size: 40px;
+    margin: 0px;
+    margin-bottom: 50px;
+}
+.head li{
+    list-style: none;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.fa-bars{
+    display: none !important;
+   }
+.bars-icon ul{
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    text-align: start;
+    min-width: 30%;
+    display: none;
+    background-color:#fff;
+    border-radius: 10px;
+    z-index: 100;
+}
+.bars-icon .nav{
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.bars-icon li{
+    text-align: start;
+    margin:10px 0px 0px 10px;
+    padding: 0px;
+    transition-duration: 0.5s;
+}
+.bars-icon li:hover{
+    margin-left: 20px;
+}
+.bars-icon:hover ul{
+    display: block;
+}
+nav .nav{
+    text-decoration: none;
+    margin: 20px;
+    color: inherit;
+    font-size: 20px;
+    padding: 10px 15px;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+nav .nav:hover{
+    background-color:white;
+    color: black;
+}
+.adv{
+    width: 60%;
+    height: auto;
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+    left: 20%;
+    top: 50px;
+    animation: adv 9s linear 2s infinite;
+}
+@keyframes adv{
+    0%{
+        left: -100%;
+    }
+    15% ,85%{
+        left: 20%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+.adv h1{
+    font-size: 80px;
+    font-weight: bold;
+    margin: 10px;
+    line-height: 100px;
+}
+.adv p{
+    font-size: 20px;
+}
+.btn{
+    margin-top: 50px;
+}
+.button-one{
+    font-size: 15px;
+    color: black;
+    height: 20px;
+    background-color: white;
+    border-radius: 50px;
+    padding: 15px 50px;
+    text-decoration: none;
+    
+}
+.button-one:hover{
+    background-color: rgb(32, 35, 50);
+    color: white;
+}
+.one,.top{
+    margin: 20px;
+    padding: 20px;
+}
+
+.one-h{
+    font-size: 50px;
+    margin: 10px;
+}
+.one-p{
+    font-size: 20px;
+    margin: 10px;
+}
+.one-imgs{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.one-img img{
+    margin: 10px;
+    margin-bottom: 30px;
+}
+.one-img{
+    text-align: center;
+}
+.btn-two{
+    text-decoration: none;
+    margin: 20px;
+    color: inherit;
+    font-size: 20px;
+    padding: 15px 25px;
+    transition-duration: 0.5s;
+    border-radius: 50px;
+    background-color: rgb(32, 35, 50);
+    color: white;
+}
+.btn-two:hover{
+    background-color:white;
+    color: black;
+    border: 1px solid black;
+}
+.two{
+    display: flex;
+}
+.a{
+    width: 40%;
+    margin-left: 50px;
+    padding-left: 50px;
+}
+.a h2{
+    font-size: 50px;
+}
+.a p{
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+.b{
+    width: 50%;
+}
+.b-img{
+    width: 100%;
+    margin-right: 0px;
+}
+.three{
+    background-image: url("images/blog-bg.png");
+    background-size: 100%;
+    width: calc(100%-100px);
+    height: 785px;
+    padding: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contain-three{
+    width: 60%;
+    margin-top: 50px;
+    text-align: center;
+}
+.three h2{
+    font-size: 50px;
+}
+.three p{
+    margin-bottom: 50px;
+}
+
+.vid{
+    margin-top: 50px;
+    padding: 40px ;
+    border-radius: 50%;
+    background-color: rgb(24, 27, 49);
+    border: 5px solid white;
+    position: relative;
+    animation: vid 2s linear 0.5s infinite;
+}
+.vid::before{
+    content: "";
+    background-color: transparent;
+    width: 0px;
+    height: 0px;
+    border-width: 15px;
+    border-color: transparent transparent transparent white;
+    border-style: solid;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+@keyframes vid{
+    0%{
+       transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+}
+.four{
+    text-align: center;
+}
+.four h1{
+    font-size: 50px;
+}
+.five{
+    width: 80%;
+    height: auto;
+    padding: 50px;
+    margin: auto;
+    border-radius: 30px;
+    overflow-x: hidden;
+    box-shadow: 1px 1px 10px rgb(96, 92, 92);
+}
+.contain-five{
+    display: flex;
+    animation: five 5s linear 0.5s infinite;
+    position: relative;
+}
+@keyframes five{
+    0%{
+       left: -100%;
+    }
+    25%,75%{
+        left:0%;
+    }
+    100%{
+       left: 100%;
+    }
+}
+.first{
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 30px;
+    text-align: center;
+    padding: 70px 30px;
+}
+.five-p{
+    line-height: 25px;
+    color: rgb(65, 64, 64);
+}
+.clint{
+    width: 150px;
+}
+.second{
+    padding: 50px;
+    display: flex;
+}
+.pic{
+    display: flex;
+    flex-direction: column;
+}
+.pic-icon{
+    width: 50px;
+    margin: auto;
+    margin-top: 30px;
+}
+.pic-words{
+    padding: 30px 20px;
+}
+.pic-words h4{
+    font-size: 25px;
+    margin: 0px;
+    font-weight: bold;
+}
+.pic-words h5{
+    font-size: 15px;
+    margin: 0px;
+    font-weight: bold;
+    color: rgb(15, 114, 83);
+    margin: 10px 0px;
+}
+.six{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+.six h2{
+    font-size: 50px;
+}
+a{
+    text-decoration: none;
+}
+.read{
+    width: 100px;
+    height: 20px;
+    background-color: black;
+    color: white;
+    margin: auto;
+    padding: 15px 30px 10px 30px;
+    border-radius: 30px;
+}
+.read:hover{
+    background-color:white;
+    color: black;
+    border: 1px solid black;
+}
+.seven{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: repeat(5,fr);
+    grid-template-rows: repeat(2 ,fr);
+    grid-template-areas: "h2 h2 h2 h2 read";
+}
+.seven h2{
+    font-size: 40px;
+    margin: 20px 10px;
+    grid-area: h2;
+}
+.seven a{
+    margin: 20px;
+    grid-area: read;
+}
+.cl{
+    clear: both;
+}
+.foot{
+    width: 100%;
+    height: 600px;
+    padding-top:100px ;
+    background-image: url("images/footer-bg.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.last-contain{
+     background-color: white;
+     width: 50%;
+     height: 60px;
+     border-radius: 30px;
+     padding-right: 10px;
+     margin-top: 50px;
+     display: grid;
+     grid-template-columns: repeat(4 , 1fr);
+     grid-template-rows: repeat(2 , 1fr);
+}
+.last-contain form{
+    grid-row: 1/2;
+    grid-column: 1/span3;
+}
+.email{
+    background-color: inherit;
+     border-style: none;
+     height: 50px;
+     margin: 3px 20px;
+     font-size: 20px;
+     outline: none;   
+}
+.sub{
+    margin: 20px 15px 0px 0px;
+    font-size: 20px;
+    grid-row: 1/2;
+}
+.sub:hover{
+    color: #000;
+}
+.connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.call{
+    width: 30px;
+    margin: 20px;
+}
+.val{
+    color: white;
+}
+.val:hover{
+     color: orange;
+}
+.social{
+    margin-top: 50px;
+}
+@media (min-width:150px) and (max-width:1000px){
+   .head{
+    background-image: url("images/mobile-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 5px;
+   }
+   .fa-bars{
+    display: block !important;
+    font-size: 35px;
+    position: absolute;
+    right: 5px;
+    top:5px;
+   }
+   nav{
+    display: none;
+   }
+   .head h2 {
+    font-size: 30px;
+    margin: 0px;
+    margin-bottom: 30px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+   }
+    .adv{
+    width: 90%;
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+    left: 5%;
+    top: 30px;
+ 
+   }
+   @keyframes adv{
+    0%{
+        left: -100%;
+    }
+    15% ,85%{
+        left: 2%;
+    }
+    100%{
+        left: 100%;
+    }
+    }
+   .adv h1{
+    font-size: 40px;
+    margin: 5px;
+    margin-top: 40px;
+    line-height: 10px;
+    }
+    .one,.top{
+        margin: 0px;
+        padding: 0px;
+    }
+    .one-h{
+        font-size: 40px;
+    }
+    .one-p{
+        font-size: 15px;
+    }
+    .one-imgs{
+        flex-direction: column;
+    }
+    .one-img img{
+        width: 100%;
+    }
+    .one-img {
+        margin-bottom: 30px;
+    }
+    .two{
+        flex-direction: column;
+    }
+    .a{
+        width: 85%;
+        margin-left: 5px;
+        padding-left: 5px;
+    }
+    .b{
+        width: 95%;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .three{
+        background-repeat: no-repeat;
+        background-image: url("images/blog-mobile-bg.png");
+        background-size: cover;
+        padding: 0px 0px 5px;
+        margin: 15px 0px;
+        height: auto;
+    }
+    .three h2{
+        font-size: 30px;
+    }
+    .vid{
+        margin-top: 10px;
+        padding: 25px;
+    }
+    .vid::before{
+        border-width: 10px;
+
+    }
+    .contain-five{
+        flex-direction: column;
+    }
+    .first{
+        width: 90%;
+        padding: 50px 10px;
+    }
+    .five{
+        padding: 15px;
+    }
+    .six{
+        width: 90%;
+        font-weight: 10;
+    }
+    .six h2{
+        font-size: 30px;
+    }
+    .second{
+        padding: 30px;
+    }
+    .seven{
+        display: grid;
+        text-align: center;
+    }
+     .seven h2{
+        font-size: 25px;
+        grid-column: 1/6;
+    }
+    .seven a{
+        grid-column:  3/4;
+        grid-row: 2/3;
+    } 
+    .foot{
+        background-image: url("images/footer-mobile-bg.png");
+        height: 450px;
+        padding-top: 25px;
+    }
+    .last-contain{
+        width: 90%;
+        height: 40px;
+        margin: 10px 0px 50px;
+    }
+    .email{
+        height: 30px;
+    }
+    .sub{
+        grid-row: 2/3;
+        grid-column: 2/4;
+        padding: 10px 0px 10px 20%;
+        background-color: white;
+        border-radius: 30px;
+    }
+}
